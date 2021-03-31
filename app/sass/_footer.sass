@@ -1,0 +1,92 @@
+.footer
+  background-color: #0D2C4A
+  padding: 0 20px
+  .container
+    display: flex
+    padding: 56px 0 102px 0
+    justify-content: space-between
+    @media (max-width: 1024px)
+      padding: 50px 0 50px 0
+    @media (max-width: 600px)
+      padding: 20px 0 20px
+    .footer__left
+      max-width: 255px
+      margin-right: 30px
+      @media (max-width: 1024px)
+        max-width: 50%
+      @media (max-width: 600px)
+        margin-right: 0
+        max-width: 100%
+      a
+        h1
+          font-family: Lora, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 52px
+          line-height: 67px
+          color: #FFFFFF
+          @media (max-width: 600px)
+            text-align: center
+      p
+        margin-top: 16px
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        color: #F8F8F8
+        opacity: 0.85
+        @media (max-width: 600px)
+          text-align: center
+      .footer__social
+        display: flex
+        max-width: 104px
+        justify-content: space-between
+        margin-top: 24px
+        @media (max-width: 600px)
+          margin: 24px auto 0 auto
+    .footer__right
+      width: 100%
+      max-width: 730px
+      display: flex
+      justify-content: space-between
+      margin-top: 30px
+      @media (max-width: 1024px)
+        justify-content: right
+        max-width: 50%
+      @media (max-width: 600px)
+        display: none
+      .footer__links
+        &:first-child
+          @media (max-width: 1024px)
+            display: none
+        &:nth-child(2)
+          @media (max-width: 1024px)
+            display: none
+        &:not(:last-child)
+          margin-right: 20px
+        display: flex
+        flex-direction: column
+        &:last-child
+          max-width: 212px
+        h3
+          font-family: Lato, sans-serif
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 30px
+          color: #FFFFFF
+          opacity: 0.5
+        .footer__bot-links
+          margin-top: 24px
+          display: flex
+          flex-direction: column
+          a
+            font-family: Lato, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            color: #FFFFFF
+            &:not(:first-child)
+              margin-top: 9px

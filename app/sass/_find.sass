@@ -1,0 +1,188 @@
+.find
+  padding: 0 20px
+  .container
+    margin-top: 56px
+    position: relative
+    max-width: 1440px
+    @media (max-width: 1024px)
+      margin-top: 20px
+    .find__absolute
+      position: absolute
+      width: 66.6%
+      height: 70%
+      right: 0
+      bottom: 0
+      z-index: 0
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+      @media (max-width: 600px)
+        display: none
+      .find__absolute-img
+        position: absolute
+        object-fit: cover
+        width: 100%
+        height: 100%
+        opacity: 0
+        transition-duration: 0.5s
+      .find-absolute-img-active
+        opacity: 1
+      .find__dots
+        display: flex
+        position: absolute
+        transform: translateX(-50%)
+        left: 50%
+        bottom: 57.3px
+        .find-dot
+          z-index: 5
+          transition-duration: 0.5s
+          cursor: pointer
+          width: 16px
+          margin: 0 2px
+          height: 4px
+          background-color: #FFFFFF
+          opacity: 0.5
+        .find-dot-active
+          background-color: #FF5722
+          width: 40px
+    .find__main
+      margin: 0 auto
+      display: flex
+      max-width: 1110px
+      justify-content: space-between
+      .find__left
+        display: flex
+        flex-direction: column
+        margin-right: 30px
+        @media (max-width: 600px)
+          margin-right: 0
+        h3
+          max-width: 189px
+          font-family: Lato, sans-serif
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 30px
+          color: #222831
+          position: relative
+          @media (max-width: 1024px)
+            font-size: 17px
+          &:after
+            content: ''
+            right: 0
+            transform: translateY(-50%)
+            top: 50%
+            position: absolute
+            width: 73px
+            height: 2px
+            background: #222831
+        h1
+          margin-top: 8px
+          font-family: Lora, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 52px
+          line-height: 67px
+          color: #10375C
+          @media (max-width: 1024px)
+            font-size: 35px
+            line-height: 45px
+          span
+            color: #DD2C00
+        .find__form
+          z-index: 1
+          margin-top: 65px
+          margin-bottom: 75px
+          background-color: #10375C
+          max-width: 365px
+          padding: 42px 40px 31px 40px
+          display: flex
+          flex-direction: column
+          @media (max-width: 600px)
+            max-width: 100%
+            margin-bottom: 0
+          h2
+            font-family: Lora, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 34px
+            line-height: 44px
+            color: #FFFFFF
+          button
+            font-family: Lato, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 28px
+            color: #FFFFFF
+            background-color: #FF5722
+            padding: 12.5px 0
+            margin-top: 22px
+            cursor: pointer
+          .find__location
+            margin: 29px 0 17px 0
+          .find__date
+            margin: 17px 0 22px 0
+          .find__location, .find__type, .find__date
+            background-color: #0D2C4A
+            position: relative
+            padding: 8px 0 8px 16px
+            cursor: pointer
+            p
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 26px
+              color: #FFFFFF
+              opacity: 0.35
+            h5
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 26px
+              color: #FFFFFF
+            img
+              position: absolute
+              right: 22.2px
+              transform: translateY(-50%)
+              top: 50%
+              transition-duration: 0.5s
+            .find-arrow-active
+              transform: rotate(180deg)
+            .find__location-hide, .find__type-hide, .find__date-hide
+              position: absolute
+              z-index: 1
+              overflow: hidden
+              max-height: 0px
+              transition-duration: 0.5s
+              background-color: #0D2C4A
+              width: 100%
+              left: 0
+              h5
+                padding: 5px 0 5px 16px
+                transition-duration: 0.5s
+                &:hover
+                  background-color: #10375C
+      .find__right
+        width: 100%
+        max-width: 382px
+        @media (max-width: 600px)
+          display: none
+        p
+          font-family: Lato, sans-serif
+          margin-top: 48px
+          font-style: normal
+          font-weight: 500
+          font-size: 20px
+          line-height: 30px
+          color: #6A6A6A
+          @media (max-width: 1024px)
+            font-size: 17px
+            line-height: 25px
+
+
+
+
+
+
+

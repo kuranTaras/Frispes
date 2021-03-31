@@ -1,0 +1,221 @@
+.our
+  padding: 0 20px
+  .container
+    display: flex
+    flex-direction: column
+    margin-top: 112px
+    @media (max-width: 1024px)
+      margin-top: 50px
+    .our__text
+      display: flex
+      justify-content: space-between
+      @media (max-width: 1024px)
+        align-items: flex-end
+      @media (max-width: 600px)
+        flex-direction: column
+        align-items: flex-start
+      h1
+        font-family: Lora, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 51px
+        color: #10375C
+        margin-right: 30px
+        @media (max-width: 1024px)
+          font-size: 30px
+          line-height: 35px
+      p
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 28px
+        color: #9A9A9A
+        max-width: 452px
+        margin-right: 30px
+        @media (max-width: 1024px)
+          font-size: 15px
+          line-height: 24px
+        @media (max-width: 600px)
+          margin-top: 10px
+      .our__buttons
+        display: flex
+        @media (max-width: 600px)
+          margin-top: 20px
+        div
+          width: 52.7px
+          height: 26px
+          cursor: pointer
+          transition-duration: 0.8s
+          background-repeat: no-repeat
+        .our-prev
+          background-image: url("../img/our/01.png")
+          margin-right: 23.3px
+        .our-next
+          transform: rotate(180deg)
+          background-image: url("../img/our/01.png")
+        .our-prev-active
+          background-image: url("../img/our/02.png")
+          width: 91.7px
+          transform: rotate(180deg)
+        .our-next-active
+          transform: rotate(0)
+          background-image: url("../img/our/02.png")
+          width: 91.3px
+    .our__slider
+      margin-top: 51.5px
+      overflow: hidden
+      @media (max-width: 600px)
+        margin-top: 20px
+      .our__slides
+        display: flex
+        transition-duration: 1s
+        .our__slide
+          display: flex
+          min-width: 100%
+          justify-content: space-between
+          @media (max-width: 600px)
+            flex-direction: column
+            align-items: center
+          .our__space
+            &:not(:last-child)
+              margin-right: 10px
+              @media (max-width: 600px)
+                margin-right: 0
+                margin-bottom: 10px
+            &:hover
+              background-color: #10375C
+              .our-absolute-img
+                opacity: 0
+              a
+                left: 0
+                bottom: 0
+              h4
+                opacity: 0
+            transition-duration: 0.8s
+            background-color: #fff
+            width: 100%
+            max-width: 350px
+            display: flex
+            flex-direction: column
+            position: relative
+            overflow: hidden
+            @media (max-width: 600px)
+              max-width: 70%
+            .our-arrows
+              margin-left: auto
+              padding: 16px 16px 0 0
+              position: relative
+              @media (max-width: 1024px)
+                display: none
+            h3
+              font-family: Lora, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 32px
+              line-height: 41px
+              text-align: center
+              color: #FFFFFF
+              margin: 38px auto 0 auto
+              padding: 0 15px
+            p
+              margin: 14px auto 0 auto
+              max-width: 253px
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 18px
+              line-height: 28px
+              text-align: center
+              color: #FFFFFF
+              padding: 0 15px 184px 15px
+              @media (max-width: 1024px)
+                padding-bottom: 100px
+              @media (max-width: 600px)
+                padding-bottom: 50px
+            a
+              transition-duration: 0.8s
+              position: absolute
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 18px
+              line-height: 22px
+              padding: 25px 73px 25px 53px
+              background-color: #FF5722
+              color: #FFFFFF
+              bottom: 48px
+              z-index: 5
+              left: -183px
+              @media (max-width: 1024px)
+                display: none
+              &:after
+                content: ''
+                position: absolute
+                width: 32px
+                height: 32px
+                background-image: url("../img/our/04.png")
+                top: 50%
+                transform: translateY(-50%)
+                right: 20px
+            .our-absolute-img
+              position: absolute
+              transition-duration: 0.8s
+              height: 419px
+              width: 100%
+              object-fit: cover
+            h4
+              transition-duration: 0.8s
+              position: absolute
+              bottom: 0
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 20px
+              line-height: 24px
+              text-align: center
+              color: #222831
+              transform: translateX(-50%)
+              left: 50%
+              width: 100%
+              @media (max-width: 1024px)
+                display: none
+    .our__dots
+      display: flex
+      margin: 53px auto 0 auto
+      .our-dot
+        width: 40px
+        height: 4px
+        background-color: #DFDFDF
+        cursor: pointer
+        transition-duration: 0.5s
+      .our-dot-active
+        background-color: #DD2C00
+    .our__count-slides
+      display: flex
+      margin: 7px auto 0 auto
+      .our-slash
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 14px
+        color: #0D2C4A
+        margin-top: 10px
+      .our-current
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 28px
+        color: #0D2C4A
+      .our-quantity
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 26px
+        color: #0D2C4A
+        opacity: 0.5
+        margin-top: auto

@@ -1,0 +1,125 @@
+.workspace
+  padding: 0 20px
+  .container
+    display: flex
+    justify-content: space-between
+    margin-top: 112px
+    @media (max-width: 1024px)
+      margin-top: 50px
+    @media (max-width: 600px)
+      flex-direction: column
+    .workspace__left
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 500px
+      margin-right: 40px
+      @media (max-width: 600px)
+        width: 100%
+      @media (max-width: 600px)
+        margin-right: 0
+        max-width: 100%
+      .workspace__row
+        &:nth-child(2)
+          margin: 64px 0
+        display: flex
+        justify-content: space-between
+        @media (max-width: 600px)
+          align-items: center
+          min-width: 100%
+        .workspace__block
+          &:not(:last-child)
+            margin-right: 20px
+          display: flex
+          width: 50%
+          @media (max-width: 600px)
+            align-items: flex-start
+            width: 35%
+          .workspace-img
+            width: 32px
+            height: 32px
+            margin-right: 24px
+          .workspace__text
+            display: flex
+            flex-direction: column
+            h4
+              font-family: Lora, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 32px
+              line-height: 41px
+              color: #10375C
+              @media (max-width: 1024px)
+                font-size: 26px
+                line-height: 33px
+            p
+              margin-top: 8px
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 26px
+              color: #9A9A9A
+              @media (max-width: 1024px)
+                font-size: 14px
+                line-height: 23px
+    .workspace__right
+      max-width: 432px
+      background-color: #10375C
+      display: flex
+      flex-direction: column
+      padding: 54px
+      @media (max-width: 1024px)
+        padding: 30px
+      @media (max-width: 600px)
+        max-width: 100%
+        margin-top: 30px
+      h3
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #FFFFFF
+        position: relative
+        max-width: 197px
+        @media (max-width: 1024px)
+          font-size: 17px
+          line-height: 24px
+        @media (max-width: 600px)
+          width: 100%
+          margin: 0 auto
+        &:after
+          content: ''
+          position: absolute
+          width: 73px
+          height: 2px
+          background-color: #FFFFFF
+          transform: translateY(-50%)
+          top: 50%
+          right: 0
+      h2
+        font-family: Lora, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 51px
+        margin-top: 8px
+        color: #FFFFFF
+        @media (max-width: 1024px)
+          font-size: 28px
+          line-height: 32px
+        @media (max-width: 600px)
+          text-align: center
+      p
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #FFFFFF
+        margin-top: 24px
+        @media (max-width: 1024px)
+          font-size: 17px
+          line-height: 24px
+          text-align: center

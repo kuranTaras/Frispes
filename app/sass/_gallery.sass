@@ -1,0 +1,111 @@
+.gallery
+  padding: 0 20px
+  .container
+    margin-top: 112px
+    max-width: 1440px
+    position: relative
+    @media (max-width: 1024px)
+      margin-top: 50px
+    .gallery__text
+      display: flex
+      flex-direction: column
+      margin-left: 54%
+      max-width: 496px
+      position: relative
+      top: 204px
+      margin-top: -204px
+      z-index: 10
+      @media (max-width: 1024px)
+        margin-left: 0
+        top: 0
+        margin-top: 0
+      h3
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #222831
+        max-width: 214px
+        position: relative
+        @media (max-width: 600px)
+          margin: 0 auto
+          width: 100%
+        &:after
+          content: ''
+          width: 73px
+          height: 2px
+          background-color: #222831
+          position: absolute
+          right: 0
+          transform: translateY(-50%)
+          top: 50%
+      h1
+        margin-top: 8px
+        font-family: Lora, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 51px
+        color: #10375C
+        max-width: 496px
+        @media (max-width: 600px)
+          text-align: center
+      div
+        display: flex
+        margin-top: 38.3px
+        @media (max-width: 600px)
+          margin: 20px auto 0 auto
+        svg
+          fill: #9A9A9A
+          cursor: pointer
+          transition-duration: 0.3s
+          &:first-child
+            margin-right: 23.3px
+          &:hover
+            fill: #FF5722
+    .gallery__slider
+      overflow: hidden
+      align-items: flex-end
+      @media (max-width: 600px)
+        align-items: flex-start
+      .gallery__slides
+        transition-duration: 0.5s
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+        justify-content: right
+        min-height: 606px
+        @media (max-width: 1024px)
+          min-height: 300px
+          margin-top: 40px
+        @media (max-width: 600px)
+          min-height: 250px
+          justify-content: left
+        .gallery-slide
+          transition-duration: 0.5s
+          min-width: 24.3%
+          height: 350px
+          object-fit: cover
+          @media (max-width: 1024px)
+            height: 200px
+          &:not(:last-child)
+            padding-right: 30px
+            @media (max-width: 1024px)
+              padding-right: 10px
+        .gallery-slide-active
+          min-width: 30.9%
+          height: 606px
+          max-height: none
+          @media (max-width: 1024px)
+            height: 250px
+            min-width: 50%
+
+
+
+
+
+
+
+
+

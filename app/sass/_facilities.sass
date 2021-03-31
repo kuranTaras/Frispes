@@ -1,0 +1,135 @@
+.facilities
+  padding: 0 20px
+  .container
+    display: flex
+    flex-direction: column
+    margin-top: 112px
+    @media (max-width: 1024px)
+      margin-top: 50px
+    .facilities__top
+      h3
+        font-family: Lato, sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #222831
+        position: relative
+        max-width: 203px
+        @media (max-width: 600px)
+          margin: 0 auto
+        &:after
+          content: ''
+          position: absolute
+          width: 73px
+          height: 2px
+          background-color: #222831
+          transform: translateY(-50%)
+          top: 50%
+          right: 0
+      h1
+        font-family: Lora, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 51px
+        color: #10375C
+        margin-top: 8px
+        max-width: 570px
+        @media (max-width: 600px)
+          text-align: center
+    .facilities__bottom
+      display: flex
+      margin-top: 51px
+      justify-content: space-between
+      .facilities__left
+        display: flex
+        width: 100%
+        max-width: 333px
+        margin-right: 30px
+        @media (max-width: 600px)
+          margin-right: 10px
+        .facilities__navigation
+          display: flex
+          flex-direction: column
+          @media (max-width: 600px)
+            display: none
+          .facilities__dots
+            display: flex
+            flex-direction: column
+            .facilities-dot
+              height: 40px
+              width: 4px
+              background-color: #DFDFDF
+              cursor: pointer
+              transition-duration: 0.5s
+            .facilities-dot-active
+              background-color: #FF5722
+          .facilities__numbers
+            display: flex
+            transform: rotate(-90deg)
+            height: 51px
+            width: 28px
+            margin-top: 24px
+            .facilities-current
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 18px
+              line-height: 28px
+              color: #10375C
+            .facilities-slash
+              font-family: Roboto, sans-serif
+              font-style: normal
+              font-weight: 400
+              font-size: 12px
+              line-height: 14px
+              color: #10375C
+              margin: 6px 0 0 0
+            .facilities-quantity
+              font-family: Lato, sans-serif
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 26px
+              color: #10375C
+              opacity: 0.5
+              margin: 0 auto
+        .facilities__menu
+          display: flex
+          flex-direction: column
+          width: 100%
+          max-width: 293px
+          margin-left: 12px
+          @media (max-width: 600px)
+            margin-left: 0
+          .facilities-link
+            font-family: Lato, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 24px
+            color: #222831
+            padding: 24px 24px 24px 24px
+            cursor: pointer
+            transition-duration: 0.5s
+            @media (max-width: 1024px)
+              padding: 20px 10px 20px 20px
+              font-size: 17px
+              line-height: 20px
+          .facilities-link-active
+            background-color: #FF5722
+            color: #FFFFFF
+      .facilities__right
+        max-width: 729px
+        overflow: hidden
+        .facilities__slides
+          max-width: 729px
+          height: 453px
+          transition-duration: 0.8s
+          img
+            display: block
+            max-width: 729px
+            width: 100%
+            height: 100%
+            object-fit: cover
